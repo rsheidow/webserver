@@ -95,7 +95,7 @@ intropage {
     max-width: 800px;
 }
 
-#career,
+#career p,
 intropage p {
     line-height: 1.8;
     margin: 20px 0;
