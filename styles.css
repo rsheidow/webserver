@@ -89,13 +89,13 @@ section p {
 
 /* Career Page Specific Styling */
 
-#test {
+#career {
     padding: 40px;
     margin: 20px auto;
     max-width: 800px;
 }
 
-#test p {
+#career p {
     line-height: 1.8;
     margin: 20px 0;
 }
