@@ -88,6 +88,29 @@ section p {
 }
 
 /* Career Page Specific Styling */
+#career ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#career ul li {
+    margin: 10px 0;
+}
+
+#career ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    border-bottom: 1px solid #61dafb;
+    padding-bottom: 2px;
+    transition:
+        color 0.3s,
+        border-color 0.3s;
+}
+
+#career ul li a:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
 
 /* Footer Styling */
 footer {
@@ -155,27 +178,5 @@ Feature Box Styling
 
 
 
-#career ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-#career ul li {
-    margin: 10px 0;
-}
-
-#career ul li a {
-    color: #61dafb;
-    text-decoration: none;
-    border-bottom: 1px solid #61dafb;
-    padding-bottom: 2px;
-    transition:
-        color 0.3s,
-        border-color 0.3s;
-}
-
-#career ul li a:hover {
-    color: #ffffff;
-    border-color: #ffffff;
-}
 */
