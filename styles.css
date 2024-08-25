@@ -101,7 +101,12 @@ section p {
 }
 
 /* Career Page Specific Styling */
-#career,
+#career {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
 #introduction {
     padding: 40px;
     margin: 20px auto;
