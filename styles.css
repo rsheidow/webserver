@@ -86,20 +86,6 @@ section p {
     font-size: 1.2em;
     line-height: 1.6;
 }
-
-/* Feature Box Styling */
-.feature-box {
-    margin: 20px;
-    padding: 20px;
-    background-color: #282c34;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.feature-box h3 {
-    margin-bottom: 10px;
-}
-
 /* Home Page Specific Styling */
 #intro {
     padding: 40px;
@@ -122,30 +108,6 @@ section p {
 #career p {
     line-height: 1.8;
     margin: 20px 0;
-}
-
-#career ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#career ul li {
-    margin: 10px 0;
-}
-
-#career ul li a {
-    color: #61dafb;
-    text-decoration: none;
-    border-bottom: 1px solid #61dafb;
-    padding-bottom: 2px;
-    transition:
-        color 0.3s,
-        border-color 0.3s;
-}
-
-#career ul li a:hover {
-    color: #ffffff;
-    border-color: #ffffff;
 }
 
 /* Footer Styling */
@@ -184,3 +146,46 @@ button:hover,
     color: #1e90ff;
     border-color: #1e90ff;
 }
+
+/*
+
+
+Feature Box Styling
+.feature-box {
+    margin: 20px;
+    padding: 20px;
+    background-color: #282c34;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+
+
+#career ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#career ul li {
+    margin: 10px 0;
+}
+
+#career ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    border-bottom: 1px solid #61dafb;
+    padding-bottom: 2px;
+    transition:
+        color 0.3s,
+        border-color 0.3s;
+}
+
+#career ul li a:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+*/
