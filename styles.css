@@ -106,15 +106,13 @@ section p {
     margin: 20px auto;
     max-width: 800px;
 }
-
-#careers {
+#intro {
     padding: 40px;
     margin: 20px auto;
     max-width: 800px;
 }
 
-#career p,
-#introduction p {
+#career p {
     line-height: 1.8;
     margin: 20px 0;
 }
