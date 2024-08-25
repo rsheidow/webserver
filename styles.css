@@ -128,6 +128,17 @@ button:hover,
 
 /*
 
+#career {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#career p {
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
 
 Feature Box Styling
 .feature-box {
