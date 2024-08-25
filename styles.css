@@ -103,7 +103,10 @@ button:hover,
 }
 
 /* Career page */
-#career {
+#career,
+#introduction,
+#features,
+#call-to-action {
     background-color: #282c34;
     padding: 40px;
     margin: 20px auto;
