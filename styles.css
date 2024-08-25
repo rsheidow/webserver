@@ -1,3 +1,4 @@
+/* Main */
 body {
     font-family: "Roboto", sans-serif;
     background-color: #1e1e1e;
@@ -76,8 +77,32 @@ footer p {
     margin: 0;
 }
 
-/* Career page */
+/* Buttons */
+button,
+.button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: 2px solid #1e90ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+}
 
+button:hover,
+.button:hover {
+    background-color: #ffffff;
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+/* Career page */
 #career {
     background-color: #282c34;
     padding: 40px;
