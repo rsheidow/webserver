@@ -50,10 +50,10 @@ nav a:hover {
 
 /* Main Content Styling */
 main {
-    padding: 50px 200px;
+    padding: 50px 20px;
     text-align: center;
     background-color: #282c34;
-    margin: 30px auto;
+    margin: 300px auto;
     border-radius: 10px;
     width: 90%;
     max-width: 900px;
