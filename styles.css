@@ -88,6 +88,17 @@ section p {
 }
 
 /* Career Page Specific Styling */
+#career {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#career p {
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
 #career ul {
     list-style-type: none;
     padding: 0;
@@ -151,16 +162,6 @@ button:hover,
 
 /*
 
-#career {
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-#career p {
-    line-height: 1.8;
-    margin: 20px 0;
-}
 
 
 Feature Box Styling
