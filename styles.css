@@ -88,14 +88,14 @@ section p {
 }
 
 /* Career Page Specific Styling */
-#career,
+#test,
 intropage {
     padding: 40px;
     margin: 20px auto;
     max-width: 800px;
 }
 
-#career p,
+#test p,
 intropage p {
     line-height: 1.8;
     margin: 20px 0;
