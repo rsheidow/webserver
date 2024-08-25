@@ -88,13 +88,13 @@ section p {
 }
 
 /* Home Page Specific Styling */
-#introduction {
+#test {
     padding: 40px;
     margin: 20px auto;
     max-width: 800px;
 }
 
-#introduction p {
+#test p {
     line-height: 1.8;
     margin: 20px 0;
 }
