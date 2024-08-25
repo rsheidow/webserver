@@ -87,26 +87,16 @@ section p {
     line-height: 1.6;
 }
 
-/* Home Page Specific Styling */
-#test {
-    padding: 40px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-#test p {
-    line-height: 1.8;
-    margin: 20px 0;
-}
-
 /* Career Page Specific Styling */
-#career {
+#career,
+intropage {
     padding: 40px;
     margin: 20px auto;
     max-width: 800px;
 }
 
-#career p {
+#career,
+intropage p {
     line-height: 1.8;
     margin: 20px 0;
 }
