@@ -100,6 +100,18 @@ section p {
     margin-bottom: 10px;
 }
 
+/* Home Page Specific Styling */
+#intro {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#intro p {
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
 /* Career Page Specific Styling */
 #career {
     padding: 40px;
