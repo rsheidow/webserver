@@ -1,4 +1,4 @@
-/* Main */
+/* Basic Page Setup */
 body {
     font-family: "Roboto", sans-serif;
     background-color: #1e1e1e;
@@ -8,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styling */
 header {
     background: #333;
     color: #61dafb;
@@ -22,6 +23,7 @@ header h1 {
     text-shadow: 2px 2px #000;
 }
 
+/* Navigation Styling */
 nav {
     margin-top: 20px;
     display: flex;
@@ -35,10 +37,10 @@ nav a {
     padding: 10px 20px;
     border: 2px solid #61dafb;
     border-radius: 5px;
+    font-size: 1.2em;
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
-    font-size: 1.2em;
 }
 
 nav a:hover {
@@ -46,6 +48,7 @@ nav a:hover {
     color: #333;
 }
 
+/* Main Content Styling */
 main {
     padding: 50px 20px;
     text-align: center;
@@ -62,74 +65,51 @@ main p {
     margin: 20px 0;
 }
 
-footer {
-    background: #333;
-    color: #61dafb;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #61dafb;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Buttons */
-button,
-.button {
-    background-color: #1e90ff;
-    color: #ffffff;
-    border: 2px solid #1e90ff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition:
-        background-color 0.3s,
-        color 0.3s,
-        border-color 0.3s;
-}
-
-button:hover,
-.button:hover {
-    background-color: #ffffff;
-    color: #1e90ff;
-    border-color: #1e90ff;
-}
-
-/* Career page */
-#career {
-    background-color: #282c34;
-    padding: 40px;
-    margin: 20px auto;
+section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #333;
     border-radius: 10px;
-    width: 80%;
-    max-width: 800px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    color: #f5f5f5;
 }
 
-#career h2 {
+section h2,
+section h3 {
     color: #61dafb;
     font-size: 2em;
-    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #f5f5f5;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Feature Box Styling */
+.feature-box {
+    margin: 20px;
+    padding: 20px;
+    background-color: #282c34;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+/* Career Page Specific Styling */
+#career {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 #career p {
-    font-size: 1.2em;
     line-height: 1.8;
     margin: 20px 0;
-}
-
-#career h3 {
-    font-size: 1.5em;
-    margin-top: 30px;
-    color: #61dafb;
 }
 
 #career ul {
@@ -156,44 +136,39 @@ button:hover,
     border-color: #ffffff;
 }
 
-/* General Section Styling */
-main section {
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 900px;
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #61dafb;
     text-align: center;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    border-top: 2px solid #61dafb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-main section h2,
-main section h3 {
-    color: #61dafb;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-main section p {
-    color: #f5f5f5;
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-/* Feature Box Styling */
-.feature-box {
-    margin: 20px;
-    padding: 20px;
-    background-color: #282c34;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.feature-box h3 {
-    color: #61dafb;
-    margin-bottom: 10px;
-}
-
-.feature-box p {
+/* Button Styling */
+button,
+.button {
+    background-color: #1e90ff;
     color: #ffffff;
+    border: 2px solid #1e90ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+}
+
+button:hover,
+.button:hover {
+    background-color: #ffffff;
+    color: #1e90ff;
+    border-color: #1e90ff;
 }
