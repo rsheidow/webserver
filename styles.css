@@ -68,7 +68,7 @@ main p {
 section {
     margin: 40px auto;
     padding: 20px;
-    max-width: 90px;
+    max-width: 900px;
     background-color: #333;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -104,7 +104,7 @@ section p {
 #career {
     padding: 40px;
     margin: 20px auto;
-    max-width: 80px;
+    max-width: 800px;
 }
 
 #career p {
