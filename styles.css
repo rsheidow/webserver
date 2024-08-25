@@ -75,3 +75,58 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Career page */
+
+#career {
+    background-color: #282c34;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: #f5f5f5;
+}
+
+#career h2 {
+    color: #61dafb;
+    font-size: 2em;
+    text-align: center;
+}
+
+#career p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+#career h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #61dafb;
+}
+
+#career ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#career ul li {
+    margin: 10px 0;
+}
+
+#career ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    border-bottom: 1px solid #61dafb;
+    padding-bottom: 2px;
+    transition:
+        color 0.3s,
+        border-color 0.3s;
+}
+
+#career ul li a:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
