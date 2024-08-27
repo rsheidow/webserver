@@ -27,7 +27,7 @@ header h1 {
 nav {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 
 nav a {
