@@ -25,9 +25,9 @@ header h1 {
 
 /* Navigation Styling */
 nav {
-    margin-top: 20px;
+    margin-top: 200px;
     display: flex;
-    justify-content: right !important;
+    justify-content: right;
 }
 
 nav a {
