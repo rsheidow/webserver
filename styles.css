@@ -188,22 +188,22 @@ button:hover,
 
 /* Guest Book CSS */
 
-form {
+guestbook-form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
 }
 
-form label {
+guestbook-form label {
     display: inline-block;
     width: 100px;
     text-align: left;
     margin-right: 10px;
 }
 
-form input[type="text"],
-form textarea {
+guestbook-form input[type="text"],
+guestbook-form textarea {
     width: calc(100% - 120px);
     background-color: #444;
     color: #fff;
@@ -213,7 +213,7 @@ form textarea {
     margin-bottom: 10px; /* Add some space between fields */
 }
 
-form button {
+guestbook-form button {
     background-color: #1e90ff;
     color: #ffffff;
     border: none;
@@ -224,7 +224,7 @@ form button {
     margin-top: 10px;
 }
 
-form button:hover {
+guestbook-form button:hover {
     background-color: #ffffff;
     color: #1e90ff;
 }
