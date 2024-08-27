@@ -37,6 +37,7 @@ nav a {
     padding: 10px 20px;
     /* border: 2px solid #61dafb; */
     border: none;
+    border-radius: 0px;
     font-size: 1.2em;
     transition:
         background-color 0.3s ease,
