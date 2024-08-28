@@ -21,7 +21,7 @@ document.getElementById("getWeatherBtn").addEventListener("click", function () {
       }
     })
     .catch((error) => {
-      console.error("Error:", error); // Log the error to console
+      console.error("Errors:", error); // Log the error to console
       document.getElementById("weatherResult").innerHTML =
         `<p>Error fetching data.</p>`;
     });
