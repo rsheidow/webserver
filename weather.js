@@ -1,5 +1,3 @@
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&units=imperial&appid=${apiKey}`;
-
 document.getElementById("getWeatherBtn").addEventListener("click", function () {
   const zipCode = document.getElementById("zipCode").value;
   const apiKey = `c659eaa0c8083d9298d08833d0d75258`; // Replace with your OpenWeatherMap API key
@@ -35,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function getWeather(zipCode, apiKey) {
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&units=imperial&appid=${apiKey}`;
+
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
