@@ -6,9 +6,10 @@ document.getElementById("getWeatherBtn").addEventListener("click", function () {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
+      // To output the data directly into your HTML
       document.getElementById("weatherData").innerHTML = `
-        <p>response ${data}</p>
-        `;
+          <p>API Response Data: ${JSON.stringify(data, null, 2)}</p>
+      `;
       if (data.cod === 200) {
         const weatherDescription = data.weather[0].description;
         const temperature = data.main.temp;
