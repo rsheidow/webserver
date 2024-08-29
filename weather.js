@@ -4,13 +4,11 @@ document.getElementById("getWeatherBtn").addEventListener("click", function () {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&units=imperial&appid=${apiKey}`;
 
   fetch(apiUrl)
-    .then((response) => {
-      response.json();
-      document.getElementById("weatherData").innerHTML = `
-        <p>response ${response}</p>
-        `;
-    })
+    .then((response) => response.json())
     .then((data) => {
+      document.getElementById("weatherData").innerHTML = `
+        <p>response ${data}</p>
+        `;
       if (data.cod === 200) {
         const weatherDescription = data.weather[0].description;
         const temperature = data.main.temp;
