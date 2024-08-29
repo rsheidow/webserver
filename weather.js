@@ -34,6 +34,7 @@ document.getElementById("getWeatherBtn").addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  console.log("Hello World here?");
   const apiKey = "c659eaa0c8083d9298d08833d0d75258"; // Replace with your OpenWeatherMap API key
   const geoApiKey = "0a0dc8a1e67171"; // Replace with your ipinfo.io API key
 
