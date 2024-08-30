@@ -286,6 +286,6 @@ button:hover,
 }
 
 .color-box:hover {
-    transform: translateY(-50px); /* Lift effect on hover */
+    transform: translateY(-10px); /* Lift effect on hover */
 
 }
