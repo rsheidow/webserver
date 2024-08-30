@@ -59,7 +59,7 @@ function displayWeather(data) {
 
   document.getElementById("weatherResult").innerHTML = `
     <div class="weather-container">
-      <img src="${iconUrl}" alt="Weather icon" />
+      <img src="${iconUrl}" alt="boo" />
       <div class="weather-details">
         <h3>Weather for ${data.name}</h3>
         <p>${weatherDescription}<span class="desc-temp-space">${temperature}°F</span></p>
