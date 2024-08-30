@@ -288,6 +288,6 @@ button:hover,
 .color-box:hover {
     /* transform: translateY(-50px); /* Lift effect on hover
     transform: skew(20deg); */
-    transform: scaleX(2);
+    transform: scaleX(1.5);
 
 }
