@@ -286,5 +286,6 @@ button:hover,
 }
 
 .color-box:hover {
-    transform: matrix(2, -0.3, 0, 3x, -50px, -50px); /* idek.. */
+    transform: translateY(-50px); /* Lift effect on hover */
+    transform: skew(20deg);
 }
