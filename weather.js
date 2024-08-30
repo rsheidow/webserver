@@ -43,8 +43,12 @@ function getWeather(zipCode, apiKey) {
       if (data.cod === 200) {
         const weatherDescription = data.weather[0].description;
         const temperature = data.main.temp;
+        const iconCode = data.weather[0].icon;
+        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
         document.getElementById("weatherResult").innerHTML = `
                     <h3>Weather for ${data.name} (ZIP: ${zipCode})</h3>
+                    <img src="${iconUrl}" alt="Weather icon" />
                     <p>${weatherDescription}</p>
                     <p>Temperature: ${temperature}°F</p>
                 `;
