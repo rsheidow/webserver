@@ -39,6 +39,7 @@ function getWeather(zipCode, apiKey) {
     .then((response) => response.json())
     .then((data) => {
       console.log("Printing data:", data);
+      console.log("You are getWeather'ing");
       if (data.cod === 200) {
         const weatherDescription = data.weather[0].description;
         const temperature = data.main.temp;
