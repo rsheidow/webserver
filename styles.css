@@ -69,6 +69,7 @@ main p {
 }
 
 section {
+    margin: 20px auto;
     padding: 20px;
     max-width: 900px;
     background-color: #333;
