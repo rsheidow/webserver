@@ -262,7 +262,7 @@ button:hover,
     gap: 20px; /* Space between the color boxes */
     margin-top: 20px;
     flex-wrap: wrap; /* Allows wrapping to the next row */
-    max-width: 640px; /* Adjust this width to control the number of boxes per row */
+    max-width: 360px; /* Adjust this width to control the number of boxes per row */
     margin: 0 auto; /* Center the palette in the container */
 }
 
