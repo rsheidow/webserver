@@ -185,3 +185,25 @@ button:hover,
     display: flex;
     flex-direction: column;
 }
+
+/* Weather */
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.weather-container img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px;
+}
+
+.weather-container .weather-details {
+    text-align: left;
+}
+
+.weather-container .weather-details p {
+    margin: 0;
+}

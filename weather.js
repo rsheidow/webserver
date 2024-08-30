@@ -58,10 +58,14 @@ function displayWeather(data, zipCode) {
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
   document.getElementById("weatherResult").innerHTML = `
-    <h3>Weather for ${data.name} (ZIP: ${zipCode})</h3>
-    <img src="${iconUrl}" alt="Weather icon" />
-    <p>${weatherDescription}</p>
-    <p>Temperature: ${temperature}°F</p>
+    <div class="weather-container">
+      <img src="${iconUrl}" alt="Weather icon" />
+      <div class="weather-details">
+        <h3>Weather for ${data.name} (ZIP: ${zipCode})</h3>
+        <p>${weatherDescription}</p>
+        <p>Temperature: ${temperature}°F</p>
+      </div>
+    </div>
   `;
 }
 
