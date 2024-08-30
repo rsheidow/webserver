@@ -173,8 +173,9 @@ button:hover,
 
 /* Individual links in the dropdown */
 .dropdown-content a {
+    top: 5px;
     color: white;
-    padding: 12px 15px; /* Slightly reduced padding */
+    padding: 12px 15px;
     text-decoration: none;
     display: block;
     transition:
@@ -298,5 +299,5 @@ COLORS!
 
 61dafb - blue
 #000 - black
-
+#fff - white
 */
