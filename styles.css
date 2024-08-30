@@ -271,7 +271,7 @@ button:hover,
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform .05s ease-out; /* Smooth hover effect */
+    transition: transform .5s ease-out; /* Smooth hover effect */
     text-align: center;
 }
 
@@ -286,8 +286,6 @@ button:hover,
 }
 
 .color-box:hover {
-    /* transform: translateY(-50px); /* Lift effect on hover
-    transform: skew(20deg); */
-    transform: scaleX(1.5);
+    transform: translateY(-50px); /* Lift effect on hover */
 
 }
