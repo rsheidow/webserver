@@ -271,7 +271,7 @@ button:hover,
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform .5s ease-out; /* Smooth hover effect */
+    transition: transform .5s ease; /* Smooth hover effect */
     text-align: center;
 }
 
