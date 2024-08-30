@@ -173,7 +173,7 @@ button:hover,
 
 /* Individual links in the dropdown */
 .dropdown-content a {
-    top: 5px;
+    margin: 5px 0;
     color: white;
     padding: 12px 15px;
     text-decoration: none;
