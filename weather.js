@@ -1,65 +1,76 @@
-document.getElementById("getWeatherBtn").addEventListener("click", function () {
-  const zipCode = document.getElementById("zipCode").value;
-  const apiKey = `c659eaa0c8083d9298d08833d0d75258`; // Replace with your OpenWeatherMap API key
-  console.log("getWeatherBtn func");
-  getWeather(zipCode, apiKey);
-});
-
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("DOMContentLoaded");
-  const apiKey = "c659eaa0c8083d9298d08833d0d75258"; // Replace with your OpenWeatherMap API key
-  const geoApiKey = "0a0dc8a1e67171"; // Replace with your ipinfo.io API key
+  const apiKey = "c659eaa0c8083d9298d08833d0d75258"; // OpenWeatherMap API key
+  const geoApiKey = "0a0dc8a1e67171"; // IP Geolocation API key
 
+  // Get user's location based on IP
   fetch(`https://ipinfo.io/json?token=${geoApiKey}`)
     .then((response) => response.json())
     .then((data) => {
-      const location = data.loc.split(","); // Extract latitude and longitude
-      const zipCode = data.postal; // Extract the postal code (zip code)
+      const zipCode = data.postal;
 
       if (zipCode) {
         getWeather(zipCode, apiKey);
       } else {
-        // Fallback: Use latitude and longitude to get the city name and then get the weather
-        console.error("No ZIP code found for this IP.");
-        document.getElementById("weatherResult").innerHTML =
-          `<p>Could not determine ZIP code from IP address.</p>`;
+        handleError("Could not determine ZIP code from IP address.");
       }
     })
     .catch((error) => {
+      handleError("Error determining location from IP.");
       console.error("Error fetching IP Geolocation:", error);
-      document.getElementById("weatherResult").innerHTML =
-        `<p>Error determining location from IP.</p>`;
     });
 });
 
+document.getElementById("getWeatherBtn").addEventListener("click", function () {
+  const zipCode = document.getElementById("zipCode").value;
+  const apiKey = `c659eaa0c8083d9298d08833d0d75258`;
+
+  if (zipCode) {
+    getWeather(zipCode, apiKey);
+  } else {
+    handleError("Please enter a ZIP code.");
+  }
+});
+
+// Fetch weather data from OpenWeatherMap
 function getWeather(zipCode, apiKey) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&units=imperial&appid=${apiKey}`;
-  console.log("You are getWeather'ing");
 
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      console.log("Printing data:", data);
       if (data.cod === 200) {
-        const weatherDescription = data.weather[0].description;
-        const temperature = data.main.temp;
-        const iconCode = data.weather[0].icon;
-        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-
-        document.getElementById("weatherResult").innerHTML = `
-                    <h3>Weather for ${data.name} (ZIP: ${zipCode})</h3>
-                    <img src="${iconUrl}" alt="Weather icon" />
-                    <p>${weatherDescription}</p>
-                    <p>Temperature: ${temperature}°F</p>
-                `;
+        displayWeather(data, zipCode);
       } else {
-        document.getElementById("weatherResult").innerHTML =
-          `<p>Weather data not found.</p>`;
+        handleError("Weather data not found.");
       }
     })
     .catch((error) => {
+      handleError("Error fetching weather data.");
       console.error("Error fetching weather data:", error);
-      document.getElementById("weatherResult").innerHTML =
-        `<p>Error fetching weather data.</p>`;
     });
+}
+
+// Display weather information on the webpage
+function displayWeather(data, zipCode) {
+  const weatherDescription = capitalizeFirstLetter(data.weather[0].description);
+  const temperature = Math.round(data.main.temp);
+  const iconCode = data.weather[0].icon;
+  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
+  document.getElementById("weatherResult").innerHTML = `
+    <h3>Weather for ${data.name} (ZIP: ${zipCode})</h3>
+    <img src="${iconUrl}" alt="Weather icon" />
+    <p>${weatherDescription}</p>
+    <p>Temperature: ${temperature}°F</p>
+  `;
+}
+
+// Handle errors by displaying them in the UI
+function handleError(message) {
+  document.getElementById("weatherResult").innerHTML = `<p>${message}</p>`;
+}
+
+// Capitalize the first letter of a string
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
