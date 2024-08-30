@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function getWeather(zipCode, apiKey) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&units=imperial&appid=${apiKey}`;
+  console.log("You are getWeather'ing");
 
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
       console.log("Printing data:", data);
-      console.log("You are getWeather'ing");
       if (data.cod === 200) {
         const weatherDescription = data.weather[0].description;
         const temperature = data.main.temp;
