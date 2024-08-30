@@ -269,6 +269,7 @@ button:hover,
     border-radius: 8px; /* Slightly rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some subtle shadow for depth */
     transition: transform 0.2s ease; /* Smooth hover effect */
+    text-align: center; /* Center the text within the box */
 }
 
 .color-box p {
