@@ -1,12 +1,12 @@
 document.getElementById("getWeatherBtn").addEventListener("click", function () {
   const zipCode = document.getElementById("zipCode").value;
   const apiKey = `c659eaa0c8083d9298d08833d0d75258`; // Replace with your OpenWeatherMap API key
-  console.log("Hello World");
+  console.log("getWeatherBtn func");
   getWeather(zipCode, apiKey);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Hello World here?");
+  console.log("DOMContentLoaded");
   const apiKey = "c659eaa0c8083d9298d08833d0d75258"; // Replace with your OpenWeatherMap API key
   const geoApiKey = "0a0dc8a1e67171"; // Replace with your ipinfo.io API key
 
@@ -38,6 +38,7 @@ function getWeather(zipCode, apiKey) {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
+      console.log("Printing data:", data);
       if (data.cod === 200) {
         const weatherDescription = data.weather[0].description;
         const temperature = data.main.temp;
