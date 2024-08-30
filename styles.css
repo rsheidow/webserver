@@ -14,7 +14,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #61dafb;
-    color: #fff;
+    color: #000;
     position: relative;
 }
 
@@ -290,5 +290,13 @@ button:hover,
 .show {
     display: block;
 }
+
+*/
+
+/*
+COLORS!
+
+61dafb - blue
+#000 - black
 
 */
