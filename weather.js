@@ -42,7 +42,7 @@ function getWeather(zipCode, apiKey) {
         const weatherDescription = data.weather[0].description;
         const temperature = data.main.temp;
         document.getElementById("weatherResult").innerHTML = `
-                    <h3>Weather test ${data.name} (ZIP: ${zipCode})</h3>
+                    <h3>Weather 4 ${data.name} (ZIP: ${zipCode})</h3>
                     <p>${weatherDescription}</p>
                     <p>Temperature: ${temperature}°F</p>
                 `;
