@@ -280,7 +280,7 @@ button:hover,
 
 .color-box p {
     color: white;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 0;
     font-family: 'Roboto', sans-serif;
     /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add some text shadow for better readability */ */
