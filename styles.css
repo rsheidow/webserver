@@ -211,3 +211,31 @@ button:hover,
 .desc-temp-space {
     margin-left: 20px; /* Adjust the margin for spacing */
 }
+
+.weather-btn {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: 2px solid #1e90ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+    margin-top: 10px;
+}
+
+.weather-btn:hover {
+    background-color: #ffffff;
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+.weather-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px #1e90ff;
+}
