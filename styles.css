@@ -8,6 +8,8 @@ body {
     line-height: 1.6;
 }
 
+/* -===-===-=== Header ===-===-===- */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -88,7 +90,7 @@ section p {
     line-height: 1.6;
 }
 
-/* Career Page Specific Styling */
+/* -===-===-=== Career ===-===-===- */
 #career ul {
     list-style-type: none;
     padding: 0;
@@ -113,7 +115,7 @@ section p {
     border-color: #ffffff;
 }
 
-/* Footer Styling */
+/* -===-===-=== Footer ===-===-===- */
 footer {
     background: #333;
     color: #61dafb;
@@ -125,7 +127,7 @@ footer {
     width: 100%;
 }
 
-/* Button Styling */
+/* -===-===-=== Button? ===-===-===- */
 button,
 .button {
     background-color: #1e90ff;
@@ -150,13 +152,13 @@ button:hover,
     border-color: #1e90ff;
 }
 
-/* Hamburger menu icon */
+/* -===-===-=== Hamburger ===-===-===- */
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
 }
 
-/* Dropdown content - initially hidden */
+/* -===-===-=== Dropdown Content ===-===-===- */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -171,7 +173,6 @@ button:hover,
     padding: 0; /* Removes additional padding */
 }
 
-/* Individual links in the dropdown */
 .dropdown-content a {
     margin: 5px 5px;
     color: white;
@@ -181,21 +182,19 @@ button:hover,
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
-    border: none; /* Remove individual borders */
+    border: none;
 }
 
-/* Hover effect */
 .dropdown-content a:hover {
     background-color: #575757;
     color: #61dafb;
 }
 
-/* Show the dropdown menu when .show is added */
 .show {
     display: block;
 }
 
-/* Weather */
+/* -===-===-=== Weather ===-===-===- */
 .weather-container {
     display: flex;
     align-items: center;
@@ -249,11 +248,34 @@ button:hover,
     box-shadow: 0 0 10px #1e90ff;
 }
 
-/*
-COLORS!
 
-61dafb - blue
+/* -===-===-=== Colors ===-===-===- */
+#colors {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the color boxes */
+    margin-top: 20px;
+}
+
+.color-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some subtle shadow for depth */
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.color-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+
+
+
 #000 - black
 #fff - white
-
-*/
