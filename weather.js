@@ -56,6 +56,7 @@ function displayWeather(data) {
   const temperature = Math.round(data.main.temp);
   const iconCode = data.weather[0].icon;
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+  console.log(data);
 
   document.getElementById("weatherResult").innerHTML = `
     <div class="weather-container">
