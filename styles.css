@@ -207,3 +207,7 @@ button:hover,
 .weather-container .weather-details p {
     margin: 0;
 }
+
+.desc-temp-space {
+    margin-left: 20px; /* Adjust the margin for spacing */
+}

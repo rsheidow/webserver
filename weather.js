@@ -39,7 +39,7 @@ function getWeather(zipCode, apiKey) {
     .then((response) => response.json())
     .then((data) => {
       if (data.cod === 200) {
-        displayWeather(data, zipCode);
+        displayWeather(data);
       } else {
         handleError("Weather data not found.");
       }
@@ -51,7 +51,7 @@ function getWeather(zipCode, apiKey) {
 }
 
 // Display weather information on the webpage
-function displayWeather(data, zipCode) {
+function displayWeather(data) {
   const weatherDescription = capitalizeFirstLetter(data.weather[0].description);
   const temperature = Math.round(data.main.temp);
   const iconCode = data.weather[0].icon;
@@ -61,9 +61,8 @@ function displayWeather(data, zipCode) {
     <div class="weather-container">
       <img src="${iconUrl}" alt="Weather icon" />
       <div class="weather-details">
-        <h3>Weather for ${data.name} (ZIP: ${zipCode})</h3>
-        <p>${weatherDescription}</p>
-        <p>Temperature: ${temperature}°F</p>
+        <h3>Weather for ${data.name}</h3>
+        <p>${weatherDescription}<span class="desc-temp-space">${temperature}°F</span></p>
       </div>
     </div>
   `;
