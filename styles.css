@@ -226,7 +226,7 @@ button:hover,
         background-color 0.3s,
         color 0.3s,
         border-color 0.3s;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .weather-btn:hover {
