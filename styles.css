@@ -261,6 +261,9 @@ button:hover,
     justify-content: center;
     gap: 20px; /* Space between the color boxes */
     margin-top: 20px;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    max-width: 480px; /* Adjust this width to control the number of boxes per row */
+    margin: 0 auto; /* Center the palette in the container */
 }
 
 .color-box {
@@ -271,7 +274,7 @@ button:hover,
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform .5s ease; /* Smooth hover effect */
+    transition: transform 0.5s ease; /* Smooth hover effect */
     text-align: center;
 }
 
