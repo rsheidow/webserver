@@ -256,11 +256,8 @@ button:hover,
     background-color: #b3b3b3;
 }
 
-#weatherSection h2 {
-    color: #575757;
-}
-
-#weatherSection div {
+#weatherSection h2,
+h3 {
     color: #575757;
 }
 
