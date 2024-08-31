@@ -206,8 +206,7 @@ button:hover,
     color: #61dafb;
 }
 
-.dropdown-content.show {
-    max-height: 500px; /* Set to a height that can accommodate the full menu */
+.show {
     opacity: 1;
     display: block;
 }
