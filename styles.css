@@ -183,6 +183,11 @@ button:hover,
     border-radius: 8px; /* Slightly less rounded corners */
     overflow: hidden; /* Ensures child elements stay within the container */
     padding: 0; /* Removes additional padding */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
 }
 
 .dropdown-content a {
@@ -204,6 +209,8 @@ button:hover,
 
 .show {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* -===-===-=== Weather ===-===-===- */
