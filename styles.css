@@ -225,9 +225,9 @@ button:hover,
 }
 
 .weather-btn {
-    background-color: #1e90ff;
+    background-color: #575757;
     color: #ffffff;
-    border: 2px solid #1e90ff;
+    border: 2px solid #575757;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
