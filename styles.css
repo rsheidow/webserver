@@ -173,6 +173,7 @@ button:hover,
 /* -===-===-=== Dropdown Content ===-===-===- */
 .dropdown-content {
     max-height: 0;
+    overflow: hidden;
     position: absolute;
     top: 60px;
     left: 20px;
@@ -180,14 +181,13 @@ button:hover,
     min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    border-radius: 8px; /* Slightly less rounded corners */
-    overflow: hidden; /* Ensures child elements stay within the container */
-    padding: 0; /* Removes additional padding */
+    border-radius: 8px;
+    padding: 0;
     opacity: 0;
     transform: translateY(-20px);
     transition:
-        transform 0.3s ease,
-        opacity 0.3s ease;
+        max-height 0.5s ease-out,
+        opacity 0.5s ease-out;
 }
 
 .dropdown-content a {
@@ -294,7 +294,7 @@ button:hover,
 .color-box {
     width: 100px;
     height: 50px;
-    border-radius: 8px; /* Slightly rounded corners */
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some subtle shadow for depth */
     display: flex;
     align-items: center;
