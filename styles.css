@@ -128,7 +128,7 @@ footer {
     color: #61dafb;
     text-align: center;
     padding: 5px 0;
-    border-top: 2px solid #61dafb;
+    border-top: 1px solid #61dafb;
     position: relative; /* Remove fixed position */
     margin-top: auto;
     width: 100%;
