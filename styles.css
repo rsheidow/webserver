@@ -172,10 +172,8 @@ button:hover,
 
 /* -===-===-=== Dropdown Content ===-===-===- */
 .dropdown-content {
-    max-height: 0;
-    overflow: hidden;
+    display: none;
     position: absolute;
-    display: flex;
     top: 60px;
     left: 20px;
     background-color: #333;
