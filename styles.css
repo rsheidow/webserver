@@ -195,14 +195,14 @@ button:hover,
 .dropdown-content a {
     margin: 5px 5px;
     color: white;
-    padding: 12px 100px;
+    padding: 12px 15px;
     text-decoration: none;
     display: block;
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
     border: none;
-    width: 100%; /* Make each link take up the full width */
+    width: 50%; /* Make each link take up the full width */
     /* box-sizing: border-box; /* Include padding and border in the width calculation */ */
 }
 
