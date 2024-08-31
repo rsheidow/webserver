@@ -185,8 +185,8 @@ button:hover,
     padding: 0;
     opacity: 0;
     transition:
-        height 1s ease-out,
-        opacity 1s ease-out;
+        height 10s ease-out,
+        opacity 10s ease-out;
 }
 
 .dropdown-content a {
@@ -196,14 +196,14 @@ button:hover,
     text-decoration: none;
     display: block;
     transition:
-        background-color 1s ease,
-        color 1s ease;
+        background-color 10s ease,
+        color 10s ease;
     border: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #333;
-    color: #61dafb;
+    background-color: #ec6e4c;
+    color: #ec6e4c;
 }
 
 .dropdown-content.show {
