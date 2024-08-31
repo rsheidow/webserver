@@ -174,7 +174,7 @@ button:hover,
 .dropdown-content {
     max-height: 0;
     overflow: hidden;
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align items to the start of the container */
