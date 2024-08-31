@@ -1,38 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do Projects</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header -->
-    <!--#include virtual="/header.html"-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-Do Projects</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("dropdownMenu");
+                menu.classList.toggle("show");
+            }
+        </script>
+    </head>
+    <body>
+        <!--#include virtual="/header.html"-->
 
-    <!-- Main Content -->
-    <main>
-        <section id="todo-projects">
-            <h2>To-Do Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>Replace OpenWeatherMap Icons with Apple WeatherKit Icons</h3>
-                    <p>Switch all the current weather icons to Apple’s WeatherKit icons for a more modern and consistent look across the website.</p>
+        <!-- Main Content -->
+        <main>
+            <section id="todo-projects">
+                <h2>To-Do Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>
+                            Replace OpenWeatherMap Icons with Apple WeatherKit
+                            Icons
+                        </h3>
+                        <p>
+                            Switch all the current weather icons to Apple’s
+                            WeatherKit icons for a more modern and consistent
+                            look across the website.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Redesign the UI</h3>
+                        <p>
+                            Overhaul the user interface to enhance usability and
+                            aesthetics. This includes selecting a new color
+                            palette and adjusting layout elements.
+                        </p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Select a New Color Palette</h3>
+                        <p>
+                            Explore and choose a new color palette that aligns
+                            with the updated design vision for the site. Ensure
+                            it’s cohesive with the overall brand.
+                        </p>
+                    </div>
+                    <!-- Add more project items as needed -->
                 </div>
-                <div class="project-item">
-                    <h3>Redesign the UI</h3>
-                    <p>Overhaul the user interface to enhance usability and aesthetics. This includes selecting a new color palette and adjusting layout elements.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Select a New Color Palette</h3>
-                    <p>Explore and choose a new color palette that aligns with the updated design vision for the site. Ensure it’s cohesive with the overall brand.</p>
-                </div>
-                <!-- Add more project items as needed -->
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- Footer -->
-    <!--#include virtual="/footer.html"-->
-</body>
+        <!-- Footer -->
+        <!--#include virtual="/footer.html"-->
+    </body>
 </html>
