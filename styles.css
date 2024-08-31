@@ -174,12 +174,15 @@ button:hover,
 /* Dropdown Content - Sliding Menu */
 .dropdown-content {
     position: fixed; /* Fix it to the viewport */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
     top: 0;
-    left: -250px; /* Adjust this based on the menu width */
+    left: -300px; /* Start off-screen */
     height: 100vh; /* Full height of the viewport */
     width: 250px; /* Adjust the width as needed */
     background-color: #333;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 1;
     border-radius: 0; /* No rounded corners */
     padding: 20px 0; /* Add some padding */
@@ -188,9 +191,6 @@ button:hover,
     transition:
         left 0.3s ease,
         opacity 0.3s ease; /* Slide and fade in */
-    overflow-y: auto; /* Enable scrolling if needed */
-    border: none; /* Ensure no borders */
-    outline: none; /* Remove any outlines */
 }
 
 .dropdown-content.show {
@@ -207,14 +207,13 @@ button:hover,
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
-    border: none; /* Ensure no borders */
-    outline: none; /* Remove any outlines */
 }
 
 .dropdown-content a:hover {
     background-color: #575757;
     color: #61dafb;
 }
+
 /* -===-===-=== Weather ===-===-===- */
 .weather-container {
     display: flex;
