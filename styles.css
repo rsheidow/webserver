@@ -256,6 +256,14 @@ button:hover,
     background-color: #b3b3b3;
 }
 
+#weatherSection h2 {
+    color: #575757;
+}
+
+#weatherSection div {
+    color: #575757;
+}
+
 /* -===-===-=== Colors ===-===-===- */
 #colors {
     text-align: center;
