@@ -175,9 +175,9 @@ button:hover,
     max-height: 0;
     overflow: hidden;
     position: absolute;
-    display: flex;
+    /* display: flex; */
     flex-direction: column; /* Stack items vertically */
-    /* align-items: flex-start; /* Align items to the start of the container */ */
+    align-items: flex-start; /* Align items to the start of the container */
     top: 60px;
     left: 20px;
     background-color: #333;
