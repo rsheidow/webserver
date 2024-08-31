@@ -171,48 +171,44 @@ button:hover,
 }
 
 /* -===-===-=== Dropdown Content ===-===-===- */
+/* Dropdown Content - Sliding Menu */
 .dropdown-content {
-    max-height: 0;
-    overflow: hidden;
-    position: absolute;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start of the container */
-    top: 60px;
-    left: 20px;
+    position: fixed; /* Fix it to the viewport */
+    top: 0;
+    left: -300px; /* Start off-screen */
+    height: 100vh; /* Full height of the viewport */
+    width: 250px; /* Adjust the width as needed */
     background-color: #333;
-    min-width: 200px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    border-radius: 8px;
-    padding: 0;
-    opacity: 0;
+    border-radius: 0; /* No rounded corners */
+    padding: 20px 0; /* Add some padding */
+    transition: left 0.3s ease; /* Smooth slide in */
+    opacity: 0; /* Start fully transparent */
     transition:
-        max-height 0.3s ease-out,
-        opacity 0.3s ease-out;
+        left 0.3s ease,
+        opacity 0.3s ease; /* Slide and fade in */
 }
 
+.dropdown-content.show {
+    left: 0; /* Slide in from the left */
+    opacity: 1; /* Fade in */
+}
+
+/* Adjust link styles */
 .dropdown-content a {
-    margin: 5px;
+    padding: 12px 20px;
     color: white;
-    padding: 12px 15px;
     text-decoration: none;
     display: block;
     transition:
         background-color 0.3s ease,
         color 0.3s ease;
-    border: none;
-    width: 190px;
 }
 
 .dropdown-content a:hover {
     background-color: #575757;
     color: #61dafb;
-}
-
-.dropdown-content.show {
-    max-height: 5000px; /* Set to a height that can accommodate the full menu */
-    opacity: 1;
 }
 
 /* -===-===-=== Weather ===-===-===- */
