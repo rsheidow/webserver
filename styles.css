@@ -212,7 +212,7 @@ button:hover,
 }
 
 .dropdown-content.show {
-    max-height: 500px; /* Set to a height that can accommodate the full menu */
+    max-height: 5000px; /* Set to a height that can accommodate the full menu */
     opacity: 1;
 }
 
