@@ -174,6 +174,9 @@ button:hover,
 /* Dropdown Content - Sliding Menu */
 .dropdown-content {
     position: fixed; /* Fix it to the viewport */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the container */
     top: 0;
     left: -300px; /* Start off-screen */
     height: 100vh; /* Full height of the viewport */
