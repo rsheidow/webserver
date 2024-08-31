@@ -290,7 +290,7 @@ button:hover,
 
 .color-box p {
     text-align: center; /* Center the text within the box */
-    width: 100%; /* Ensure the paragraph takes up the full width
+    width: 100%; /* Ensure the paragraph takes up the full width */
 }
 
 .color-box:hover {
