@@ -392,7 +392,7 @@ button:hover,
 }
 
 .project-item {
-    background-color: #333;
+    background-color: #444;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -400,7 +400,7 @@ button:hover,
 }
 
 .project-item:hover {
-    background-color: #444;
+    background-color: #555;
 }
 
 .project-item h3 {
