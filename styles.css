@@ -280,8 +280,6 @@ button:hover,
 }
 
 .color-box p {
-    color: white;
-    /* font-weight: bold; */
     margin: 0;
     text-align: center; /* Center the text within the box */
     width: 100%; /* Ensure the paragraph takes up the full width
