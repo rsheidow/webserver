@@ -193,9 +193,9 @@ button:hover,
 }
 
 .dropdown-content a {
-    margin: 5px;
+    margin: 50px;
     color: white;
-    padding: 12px 50px;
+    padding: 12px 15px;
     text-decoration: none;
     display: block;
     transition:
