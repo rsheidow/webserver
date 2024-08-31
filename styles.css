@@ -127,7 +127,8 @@ footer {
     background: #333;
     color: #61dafb;
     text-align: center;
-    padding: 5px 0;
+    height: 100px; /* Set the footer height to 100px */
+    line-height: 100px; /* Vertically center text if needed */
     border-top: 2px solid #61dafb;
     position: relative; /* Remove fixed position */
     margin-top: auto;
