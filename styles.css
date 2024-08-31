@@ -172,9 +172,9 @@ button:hover,
 
 /* -===-===-=== Dropdown Content ===-===-===- */
 .dropdown-content {
-    display: none;
-    position: absolute;
+    max-height: 0;
     overflow: hidden;
+    position: absolute;
     top: 60px;
     left: 20px;
     background-color: #333;
@@ -206,9 +206,9 @@ button:hover,
     color: #61dafb;
 }
 
-.show {
+.dropdown-content.show {
+    max-height: 500px; /* Set to a height that can accommodate the full menu */
     opacity: 1;
-    display: block;
 }
 
 /* -===-===-=== Weather ===-===-===- */
