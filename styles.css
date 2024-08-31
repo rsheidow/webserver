@@ -7,6 +7,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
 }
 
 /* -===-===-=== Header ===-===-===- */
@@ -62,6 +64,7 @@ main {
     width: 90%;
     max-width: 900px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    flex: 1; /* Allows main content to grow and take up available space */
 }
 
 main p {
@@ -126,7 +129,7 @@ footer {
     text-align: center;
     padding: 0px 0;
     border-top: 2px solid #61dafb;
-    position: fixed;
+    position: relative; /* Remove fixed position */
     bottom: 0;
     width: 100%;
 }
