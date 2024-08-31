@@ -172,7 +172,7 @@ button:hover,
 
 /* -===-===-=== Dropdown Content ===-===-===- */
 .dropdown-content {
-    max-height: 0;
+    max-height: 5000px; /* Set to a height that can accommodate the full menu */
     overflow: hidden;
     position: absolute;
     top: 60px;
