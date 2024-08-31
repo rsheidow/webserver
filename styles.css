@@ -207,10 +207,9 @@ button:hover,
     color: #61dafb;
 }
 
-.show {
-    display: block;
+.dropdown-content.show {
+    max-height: 500px; /* Set to a height that can accommodate the full menu */
     opacity: 1;
-    transform: translateY(0);
 }
 
 /* -===-===-=== Weather ===-===-===- */
