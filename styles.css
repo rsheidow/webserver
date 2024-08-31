@@ -202,7 +202,7 @@ button:hover,
         background-color 0.3s ease,
         color 0.3s ease;
     border: none;
-    width: 190px; /* Make each link take up the full width */
+    width: 95%;
 }
 
 .dropdown-content a:hover {
