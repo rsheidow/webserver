@@ -193,7 +193,7 @@ button:hover,
 }
 
 .dropdown-content a {
-    margin: 50px;
+    margin: 1px;
     color: white;
     padding: 12px 15px;
     text-decoration: none;
