@@ -1,4 +1,8 @@
 /* Career Section */
+#career {
+    margin: 0px auto 50px;
+}
+
 #career ul {
     list-style-type: none;
     padding: 0;
