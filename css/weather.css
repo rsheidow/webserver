@@ -72,3 +72,8 @@
     cursor: pointer;
     align-items: center;
 }
+
+.input-container button:hover {
+    background-color: #575757;
+    color: #61dafb;
+}
