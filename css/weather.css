@@ -80,7 +80,7 @@
     background-color: #1c1c1c;
     color: #fff;
     font-size: 16px;
-    height: 35px; /* Ensure this height matches the button */
+    height: 30px; /* Ensure this height matches the button */
 }
 
 .input-container input::placeholder {
@@ -96,7 +96,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-    height: 35px; /* Ensure this height matches the button */
+    height: 30px; /* Ensure this height matches the button */
 }
 
 .input-container button:hover {
