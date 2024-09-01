@@ -34,3 +34,8 @@
 .color-box:hover {
     transform: translateY(-10px);
 }
+
+#welcome {
+    margin: 20px auto 50px;
+    min-height: 200px;
+}

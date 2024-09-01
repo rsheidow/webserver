@@ -1,6 +1,7 @@
 /* Weather Section */
 #weatherSection {
     background-color: #d4cfcf;
+    min-height: 200px;
 }
 
 #weatherSection h2,
