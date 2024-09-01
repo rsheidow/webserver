@@ -1,13 +1,13 @@
 /* Weather Section */
 #weatherSection {
-    background-color: #d4cfcf;
+    /* background-color: #d4cfcf; */
     min-height: 220px;
 }
 
-#weatherSection h2,
+/* #weatherSection h2,
 #weatherSection h3 {
     color: #575757;
-}
+} */
 
 .weather-container {
     display: flex;
