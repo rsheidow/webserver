@@ -1,5 +1,17 @@
 <!-- header.html -->
 <header>
+    <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
     <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     <nav id="dropdownMenu" class="dropdown-content">
         <a href="/">Home</a>
