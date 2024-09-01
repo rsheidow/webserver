@@ -1,0 +1,36 @@
+/* To-Do Projects Section */
+#todo-projects {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-item {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.project-item:hover {
+    background-color: #555;
+}
+
+.project-item h3 {
+    margin: 0 0 10px;
+    color: #61dafb;
+}
+
+.project-item p {
+    margin: 0;
+    color: #f5f5f5;
+    font-size: 1.1em;
+}
