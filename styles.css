@@ -355,9 +355,9 @@ button:hover,
     cursor: pointer;
 }
 
-.bar1,
-.bar2,
-.bar3 {
+.b1,
+.b2,
+.b3 {
     width: 35px;
     height: 5px;
     background-color: #333;
