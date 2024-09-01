@@ -88,14 +88,14 @@
 }
 
 .input-container button {
-    padding: 10px 15px;
+    flex: 1;
+    padding: 10px;
     border: none;
     border-radius: 0 8px 8px 0;
     background-color: #007bff;
-    color: white;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
     height: 45px; /* Ensure this height matches the input */
     display: flex;
     align-items: center;
