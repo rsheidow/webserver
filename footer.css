@@ -1,0 +1,43 @@
+
+
+/* -===-===-=== Footer ===-===-===- */
+footer {
+    background: #333;
+    color: #61dafb;
+    text-align: center;
+    padding: 2px 0;
+    border-top: 1px solid #61dafb;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+}
+
+#footer {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Button Styles */
+button,
+.button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: 2px solid #1e90ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s;
+}
+
+button:hover,
+.button:hover {
+    background-color: #ffffff;
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
