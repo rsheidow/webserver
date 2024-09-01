@@ -58,6 +58,7 @@
 
 .input-container input::focus {
     border: none;
+    outline: none;
 }
 
 .input-container button {
@@ -79,5 +80,4 @@
 .input-container button:focus {
     outline: none;
     background-color: #333;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
