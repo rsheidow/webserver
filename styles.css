@@ -190,6 +190,7 @@ button:hover,
     transition:
         left 0.3s ease,
         opacity 0.3s ease; /* Slide and fade in */
+    overflow-y: auto; /* Enable scrolling if needed */
 }
 
 .dropdown-content a {
