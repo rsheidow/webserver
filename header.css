@@ -80,3 +80,31 @@ nav a:hover {
     left: 0;
     opacity: 1;
 }
+
+/* Hamburger Menu */
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.b1,
+.b2,
+.b3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .b1 {
+    transform: translate(0, 11px) rotate(45deg);
+}
+
+.change .b2 {
+    opacity: 0;
+}
+
+.change .b3 {
+    transform: translate(0, -11px) rotate(-45deg);
+}
