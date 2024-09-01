@@ -366,7 +366,7 @@ button:hover,
 }
 
 .change .b1 {
-    transform: translate(11px, 0) rotate(-45deg);
+    transform: translate(0, -11px) rotate(-45deg);
 }
 
 .change .b2 {
@@ -374,5 +374,5 @@ button:hover,
 }
 
 .change .b3 {
-    transform: translate(-11px, 0) rotate(45deg);
+    transform: translate(0, 11px) rotate(45deg);
 }
