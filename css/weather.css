@@ -80,7 +80,7 @@
     background-color: #1c1c1c;
     color: #fff;
     font-size: 16px;
-    height: 45px; /* Ensure this height matches the button */
+    height: 35px; /* Ensure this height matches the button */
 }
 
 .input-container input::placeholder {
