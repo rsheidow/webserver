@@ -20,7 +20,6 @@ header {
     background-color: #61dafb;
     color: #000;
     position: relative;
-    z-index: 10;
 }
 
 header h1 {
@@ -183,7 +182,6 @@ button:hover,
     width: 200px; /* Adjust the width as needed */
     background-color: #333;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 25;
     border-radius: 0; /* No rounded corners */
     /* padding: 20px 0; /* Add some padding */ */
     transition: left 0.3s ease; /* Smooth slide in */
