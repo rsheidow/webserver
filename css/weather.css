@@ -66,16 +66,11 @@
     padding: 10px;
     border: none;
     border-radius: 0 8px 8px 0;
-    background-color: #333;
+    background-color: #575757;
     color: #61dafb;
     font-size: 16px;
     cursor: pointer;
     align-items: center;
-}
-
-.input-container button:hover {
-    background-color: #575757;
-    color: #61dafb;
 }
 
 .input-container button:focus {
