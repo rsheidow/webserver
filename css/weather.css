@@ -28,34 +28,6 @@
     margin-left: 20px;
 }
 
-.weather-btn {
-    background-color: #575757;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition:
-        background-color 0.3s,
-        color 0.3s,
-        border-color 0.3s;
-    margin-top: 10px;
-}
-
-.weather-btn:hover {
-    background-color: #575757;
-    color: #61dafb;
-}
-
-.weather-btn:focus {
-    outline: none;
-    background-color: #333;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
-
 .large-icon {
     font-size: 48px; /* Adjust this value to make the icon larger or smaller */
     line-height: 1;
@@ -100,4 +72,10 @@
 
 .input-container button:hover {
     background-color: #0056b3;
+}
+
+.input-container button:focus {
+    outline: none;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
