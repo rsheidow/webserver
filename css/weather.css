@@ -1,13 +1,7 @@
 /* Weather Section */
 #weatherSection {
-    /* background-color: #d4cfcf; */
     min-height: 220px;
 }
-
-/* #weatherSection h2,
-#weatherSection h3 {
-    color: #575757;
-} */
 
 .weather-container {
     display: flex;
@@ -59,7 +53,8 @@
 
 .weather-btn:focus {
     outline: none;
-    box-shadow: 0 0 10px #1e90ff;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .large-icon {
