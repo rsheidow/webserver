@@ -46,9 +46,8 @@
 }
 
 .weather-btn:hover {
-    background-color: #ffffff;
-    color: #1e90ff;
-    border-color: #1e90ff;
+    background-color: #575757;
+    color: #61dafb;
 }
 
 .weather-btn:focus {
