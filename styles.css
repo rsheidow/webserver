@@ -203,7 +203,7 @@ button:hover,
         background-color 0.3s ease,
         color 0.3s ease;
     border: none;
-    width: 100px;
+    width: 180px;
 }
 
 .dropdown-content a:hover {
