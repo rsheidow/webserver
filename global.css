@@ -30,7 +30,7 @@ main p {
 }
 
 section {
-    margin: 0px auto 50px;
+    margin: 20px auto;
     padding: 20px;
     max-width: 900px;
     background-color: #333;
@@ -51,5 +51,5 @@ section p {
 }
 
 #welcome {
-    margin: 0px auto 50px;
+    margin: 20px auto 50px;
 }
