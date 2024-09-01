@@ -72,8 +72,3 @@
     cursor: pointer;
     align-items: center;
 }
-
-.input-container button:focus {
-    outline: none;
-    background-color: #333;
-}
