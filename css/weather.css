@@ -96,7 +96,6 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-    height: 30px; /* Ensure this height matches the button */
 }
 
 .input-container button:hover {
