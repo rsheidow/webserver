@@ -56,6 +56,10 @@
     color: #fff;
 }
 
+.input-container input::focus {
+    border: none;
+}
+
 .input-container button {
     flex: 1;
     padding: 10px;
