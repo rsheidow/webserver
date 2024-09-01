@@ -66,7 +66,7 @@ function displayWeather(data, iconMapping) {
   const temperature = Math.round(data.main.temp);
   const conditionCode = data.weather[0].id.toString(); // OpenWeatherMap weather condition code
   const iconClass = iconMapping[conditionCode] || "wi-na"; // Use mapping or fallback
-  const iconElement = `<i class="wi ${iconClass}"></i>`; // Create icon element
+  const iconElement = `<i class="wi ${iconClass} large-icon"></i>`; // Add the custom class here
   console.log(data);
 
   document.getElementById("weatherResult").innerHTML = `

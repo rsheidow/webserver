@@ -61,3 +61,8 @@
     outline: none;
     box-shadow: 0 0 10px #1e90ff;
 }
+
+.large-icon {
+    font-size: 48px; /* Adjust this value to make the icon larger or smaller */
+    line-height: 1;
+}
