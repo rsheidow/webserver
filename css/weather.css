@@ -82,7 +82,7 @@
 }
 
 .input-container input::placeholder {
-    color: #999;
+    color: #333;
 }
 
 .input-container button {
