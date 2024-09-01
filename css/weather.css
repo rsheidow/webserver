@@ -45,11 +45,6 @@
     margin-top: 10px;
 }
 
-.weather-btn:hover {
-    background-color: #575757;
-    color: #61dafb;
-}
-
 .weather-btn:focus {
     outline: none;
     background-color: #333;
@@ -97,5 +92,12 @@
 }
 
 .input-container button:hover {
-    background-color: #0056b3;
+    background-color: #575757;
+    color: #61dafb;
+}
+
+.input-container button:focus {
+    outline: none;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
