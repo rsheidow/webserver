@@ -60,3 +60,43 @@
     font-size: 48px; /* Adjust this value to make the icon larger or smaller */
     line-height: 1;
 }
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-container input::placeholder {
+    color: #999;
+}
+
+.input-container button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-container button:hover {
+    background-color: #1c86ee;
+}
