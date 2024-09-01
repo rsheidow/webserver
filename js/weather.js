@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch((error) => {
           // handleError("Error determining location from IP.");
-          getWeather("03032", apiKey, iconMapping);
+          getWeather("02108", apiKey, iconMapping);
           console.error("Error fetching IP Geolocation:", error);
         });
     });
