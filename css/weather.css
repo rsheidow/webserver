@@ -72,7 +72,7 @@
     margin: 20px auto;
 }
 
-/* .input-container input {
+.input-container input {
     flex: 1;
     padding: 10px;
     border: none;
@@ -80,14 +80,13 @@
     background-color: #1c1c1c;
     color: #fff;
     font-size: 16px;
-    height: 30px; /* Ensure this height matches the button
-} */
+}
 
 .input-container input::placeholder {
     color: #fff;
 }
 
-/* .input-container button {
+.input-container button {
     flex: 1;
     padding: 10px;
     border: none;
@@ -96,13 +95,7 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    height: 45px; /* Ensure this height matches the input
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    transition: background-color 0.3s;
-} */
+}
 
 .input-container button:hover {
     background-color: #0056b3;
