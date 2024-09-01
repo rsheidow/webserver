@@ -67,7 +67,7 @@
     align-items: center;
     /* background-color: #2c2c2c; */
     padding: 10px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     max-width: 500px;
     margin: 20px auto;
 }
@@ -83,7 +83,7 @@
 }
 
 .input-container input::placeholder {
-    color: #333;
+    color: #1e1e1e;
 }
 
 .input-container button {
@@ -95,6 +95,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    height: 20px;
 }
 
 .input-container button:hover {
