@@ -25,7 +25,7 @@
 }
 
 .desc-temp-space {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .weather-btn {
@@ -59,6 +59,7 @@
 .large-icon {
     font-size: 48px; /* Adjust this value to make the icon larger or smaller */
     line-height: 1;
+    margin-right: 20px;
 }
 
 .input-container {
