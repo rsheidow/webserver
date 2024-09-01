@@ -213,7 +213,6 @@ button:hover,
 .dropdown-content.show {
     left: 0; /* Slide in from the left */
     opacity: 1; /* Fade in */
-    max-height: 100vh; /* Full height of the viewport */
 }
 
 /* -===-===-=== Weather ===-===-===- */
