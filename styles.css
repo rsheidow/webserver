@@ -365,14 +365,14 @@ button:hover,
     transition: 0.4s;
 }
 
-.change .bar1 {
+.change .b1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
 
-.change .bar2 {
+.change .b2 {
     opacity: 0;
 }
 
-.change .bar3 {
+.change .b3 {
     transform: translate(0, -11px) rotate(45deg);
 }
