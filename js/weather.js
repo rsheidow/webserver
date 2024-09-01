@@ -2,21 +2,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const apiKey = "c659eaa0c8083d9298d08833d0d75258"; // OpenWeatherMap API key
   const geoApiKey = "0a0dc8a1e67171"; // IP Geolocation API key
 
-  // Get user's location based on IP
-  fetch(`https://ipinfo.io/json?token=${geoApiKey}`)
+  // Load weather icon mapping from JSON file
+  fetch("weatherIconsMapping.json")
     .then((response) => response.json())
-    .then((data) => {
-      const zipCode = data.postal;
+    .then((iconMapping) => {
+      // Get user's location based on IP
+      fetch(`https://ipinfo.io/json?token=${geoApiKey}`)
+        .then((response) => response.json())
+        .then((data) => {
+          const zipCode = data.postal;
 
-      if (zipCode) {
-        getWeather(zipCode, apiKey);
-      } else {
-        handleError("Could not determine ZIP code from IP address.");
-      }
-    })
-    .catch((error) => {
-      handleError("Error determining location from IP.");
-      console.error("Error fetching IP Geolocation:", error);
+          if (zipCode) {
+            getWeather(zipCode, apiKey, iconMapping);
+          } else {
+            handleError("Could not determine ZIP code from IP address.");
+          }
+        })
+        .catch((error) => {
+          handleError("Error determining location from IP.");
+          console.error("Error fetching IP Geolocation:", error);
+        });
     });
 });
 
@@ -24,22 +29,27 @@ document.getElementById("getWeatherBtn").addEventListener("click", function () {
   const zipCode = document.getElementById("zipCode").value;
   const apiKey = `c659eaa0c8083d9298d08833d0d75258`;
 
-  if (zipCode) {
-    getWeather(zipCode, apiKey);
-  } else {
-    handleError("Please enter a ZIP code.");
-  }
+  // Load weather icon mapping from JSON file
+  fetch("weatherIconsMapping.json")
+    .then((response) => response.json())
+    .then((iconMapping) => {
+      if (zipCode) {
+        getWeather(zipCode, apiKey, iconMapping);
+      } else {
+        handleError("Please enter a ZIP code.");
+      }
+    });
 });
 
 // Fetch weather data from OpenWeatherMap
-function getWeather(zipCode, apiKey) {
+function getWeather(zipCode, apiKey, iconMapping) {
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&units=imperial&appid=${apiKey}`;
 
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
       if (data.cod === 200) {
-        displayWeather(data);
+        displayWeather(data, iconMapping);
       } else {
         handleError("Weather data not found.");
       }
@@ -51,16 +61,17 @@ function getWeather(zipCode, apiKey) {
 }
 
 // Display weather information on the webpage
-function displayWeather(data) {
+function displayWeather(data, iconMapping) {
   const weatherDescription = capitalizeFirstLetter(data.weather[0].description);
   const temperature = Math.round(data.main.temp);
-  const iconCode = data.weather[0].icon;
-  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+  const conditionCode = data.weather[0].id.toString(); // OpenWeatherMap weather condition code
+  const iconClass = iconMapping[conditionCode] || "wi-na"; // Use mapping or fallback
+  const iconElement = `<i class="wi ${iconClass}"></i>`; // Create icon element
   console.log(data);
 
   document.getElementById("weatherResult").innerHTML = `
     <div class="weather-container">
-      <img src="${iconUrl}"/>
+      ${iconElement}
       <div class="weather-details">
         <h3>Weather for ${data.name}</h3>
         <p>${weatherDescription}<span class="desc-temp-space">${temperature}°F</span></p>
