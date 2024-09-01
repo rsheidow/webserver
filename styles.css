@@ -178,12 +178,11 @@ button:hover,
     align-items: flex-start; /* Align items to the start of the container */
     top: 60px;
     left: -250px; /* Start off-screen */
-    height: 100%; /* Full height of the viewport minus the header height */
+    height: 100vh; /* Full height of the viewport minus the header height */
     width: 200px; /* Adjust the width as needed */
     background-color: #333;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     border-radius: 0; /* No rounded corners */
-    /* padding: 20px 0; /* Add some padding */ */
     transition: left 0.3s ease; /* Smooth slide in */
     opacity: 0; /* Start fully transparent */
     transition:
@@ -430,28 +429,30 @@ button:hover,
     font-size: 1.1em;
 }
 
-
-
 /* -===-===-=== New Menu Bar ===-===-===- */
 .container {
-  display: inline-block;
-  cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
 .change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+    transform: translate(0, 11px) rotate(-45deg);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 
 .change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+    transform: translate(0, -11px) rotate(45deg);
 }
