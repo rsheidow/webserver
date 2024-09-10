@@ -1,4 +1,8 @@
 /* -===-===-=== Global ===-===-===- */
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #1e1e1e;
