@@ -91,7 +91,27 @@
                     </p>
                 </div>
             </section>
+            <section>
+                <ul>
+                    <li>
+                        <p>Testing1</p>
+                    </li>
+                    <li>
+                        <p>Testing2</p>
+                    </li>
+                </ul>
+            </section>
         </main>
         <!--#include virtual="/footer.html"-->
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
     </body>
 </html>
