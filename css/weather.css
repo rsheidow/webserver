@@ -60,7 +60,6 @@
 .input-container input::focus {
     border: none;
     outline: none;
-    /* box-shadow: none; */
 }
 
 .input-container button {
