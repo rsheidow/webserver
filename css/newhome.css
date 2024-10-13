@@ -1,4 +1,8 @@
 /* -===-===-=== Index ===-===-===- */
+body {
+    padding-top: 50px;
+}
+
 /* Colors Section */
 #colors {
     text-align: center;
