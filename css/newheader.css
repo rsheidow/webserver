@@ -7,6 +7,8 @@ header {
     backdrop-filter: blur(10px);
     top: 0;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 
 header h1 {
