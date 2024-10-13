@@ -15,6 +15,7 @@ header h1 {
     margin: 0;
     font-size: 24px;
     color: #61dafb;
+    text-align: left;
 }
 
 /* Navigation Styling */
@@ -87,6 +88,7 @@ nav a:hover {
 .container {
     display: inline-block;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .b1,
