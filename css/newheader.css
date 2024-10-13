@@ -19,8 +19,8 @@ header h1 {
 
 /* Navigation Styling */
 nav {
-    /* display: flex; */
-    /* justify-content: right; */
+    display: flex;
+    justify-content: right;
 }
 
 nav a {
@@ -85,8 +85,8 @@ nav a:hover {
 
 /* Hamburger Menu */
 .container {
-    display: inline-block;
-    cursor: pointer;
+    /* display: inline-block; */
+    /* cursor: pointer; */
 }
 
 .b1,
