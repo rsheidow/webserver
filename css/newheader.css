@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 /* Dropdown Content */
-.dropdown-content {
+.topMenu-content {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ nav a:hover {
     opacity: 0;
 }
 
-.dropdown-content a {
+.topMenu-content a {
     margin: 5px;
     color: white;
     padding: 12px 15px;
@@ -71,12 +71,12 @@ nav a:hover {
     width: 160px;
 }
 
-.dropdown-content a:hover {
+.topMenu-content a:hover {
     background-color: #575757;
     color: #61dafb;
 }
 
-.dropdown-content.show {
+.topMenu-content.show {
     left: 0;
     opacity: 1;
 }
