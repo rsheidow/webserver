@@ -21,7 +21,7 @@ header h1 {
 /* Navigation Styling */
 nav {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 nav a {
