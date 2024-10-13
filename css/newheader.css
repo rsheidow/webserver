@@ -73,7 +73,7 @@ nav a:hover {
 
 .topMenu-content a:hover {
     background-color: #575757;
-    color: #61dafb;
+    color: #000000;
 }
 
 .topMenu-content.show {
