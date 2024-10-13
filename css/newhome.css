@@ -1,8 +1,4 @@
 /* -===-===-=== Index ===-===-===- */
-#mainSection {
-    margin-top: 500px;
-}
-
 /* Colors Section */
 #colors {
     text-align: center;
@@ -40,6 +36,6 @@
 }
 
 #welcome {
-    margin: 20px auto 500px;
+    margin: 20px auto 50px;
     min-height: 220px;
 }
