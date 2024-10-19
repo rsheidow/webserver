@@ -3,12 +3,11 @@
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     top: 0;
-    width: 90%;
+    width: 100%;
     position: fixed;
     z-index: 1000;
     display: flex;
     padding: 20px 50px;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
