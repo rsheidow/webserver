@@ -102,6 +102,14 @@ nav a:hover {
     transition: 0.4s;
 }
 
+.b2 {
+    width: 35px;
+    height: 5px;
+    background-color: #61dafb;
+    margin: 6px 0;
+    transition: 0s;
+}
+
 .change .b1 {
     transform: translate(0, 11px) rotate(45deg);
 }
