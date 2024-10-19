@@ -9,6 +9,7 @@
     display: flex;
     padding: 20px 50px;
     justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
@@ -86,6 +87,7 @@ nav a:hover {
 
 /* Hamburger Menu */
 .container {
+    z-index: 1001;
     display: inline-block;
     cursor: pointer;
     margin-left: auto;
@@ -96,7 +98,7 @@ nav a:hover {
 .b3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: #61dafb;
     margin: 6px 0;
     transition: 0.4s;
 }
