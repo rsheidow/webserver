@@ -2,10 +2,10 @@
 .header-container {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    /* top: 0; */
-    /* width: 100%; */
-    /* margin: 0px; */
-    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    margin: 0px;
+    position: fixed;
     z-index: 1000;
     display: flex;
     padding: 20px 50px;
