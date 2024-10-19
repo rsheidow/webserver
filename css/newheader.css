@@ -89,6 +89,7 @@ nav a:hover {
 .container {
     display: inline-block;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .b1,
