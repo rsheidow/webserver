@@ -19,10 +19,10 @@ header h1 {
 }
 
 /* Navigation Styling */
-nav {
+/* nav {
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 nav a {
     color: #61dafb;
