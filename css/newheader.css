@@ -86,10 +86,9 @@ nav a:hover {
 
 /* Hamburger Menu */
 .container {
-    /* display: inline-block; */
-    /* cursor: pointer; */
-    /* margin-left: auto; */
-    justify-content: flex-start;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 .b1,
