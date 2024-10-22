@@ -26,45 +26,57 @@
             <section id="colors">
                 <h3>Colors Used on This Site</h3>
                 <div class="color-palette">
-                    <div class="color-palette">
-                        <!-- Grayscale Colors -->
-                        <div class="color-box" style="background-color: #000000">
-                            <p style="color: white">#000000</p>
-                        </div>
-                        <div class="color-box" style="background-color: #1e1e1e">
-                            <p style="color: white">#1E1E1E</p>
-                        </div>
-                        <div class="color-box" style="background-color: #333333">
-                            <p style="color: white">#333333</p>
-                        </div>
-                        <div class="color-box" style="background-color: #575757">
-                            <p style="color: white">#575757</p>
-                        </div>
-                        <div class="color-box" style="background-color: #282c34">
-                            <p style="color: white">#282C34</p>
-                        </div>
-                        <div class="color-box" style="background-color: #48484a">
-                            <p style="color: white">#48484A</p>
-                        </div>
-                        <div class="color-box" style="background-color: #b3b3b3">
-                            <p style="color: white">#B3B3B3</p>
-                        </div>
-                        <div class="color-box" style="background-color: #d4cfcf">
-                            <p style="color: white">#D4CFCF</p>
-                        </div>
+                    <script>
+                        // Array of colors with properties for sorting
+                        const colors = [
+                            { hex: "#000000", text: "white" },
+                            { hex: "#1e1e1e", text: "white" },
+                            { hex: "#333333", text: "white" },
+                            { hex: "#575757", text: "white" },
+                            { hex: "#282c34", text: "white" },
+                            { hex: "#48484a", text: "white" },
+                            { hex: "#b3b3b3", text: "white" },
+                            { hex: "#d4cfcf", text: "white" },
+                            { hex: "#61dafb", text: "black" },
+                            { hex: "#1e90ff", text: "white" },
+                            { hex: "#ec6e4c", text: "white" },
+                        ];
 
-                        <!-- Blue Tones -->
-                        <div class="color-box" style="background-color: #61dafb">
-                            <p style="color: #000">#61DAFB</p>
-                        </div>
-                        <div class="color-box" style="background-color: #1e90ff">
-                            <p style="color: white">#1E90FF</p>
-                        </div>
+                        // Example sorting by lightness (grayscale first, followed by colors)
+                        colors.sort((a, b) => {
+                            // Convert hex to RGB and calculate brightness
+                            const brightnessA = hexToBrightness(a.hex);
+                            const brightnessB = hexToBrightness(b.hex);
+                            return brightnessA - brightnessB; // Ascending order by brightness
+                        });
 
-                        <!-- Accent Colors -->
-                        <div class="color-box" style="background-color: #ec6e4c">
-                            <p style="color: white">#EC6E4C</p>
-                        </div>
+                        // Function to convert hex to brightness
+                        function hexToBrightness(hex) {
+                            const rgb = parseInt(hex.slice(1), 16); // Convert hex to integer
+                            const r = (rgb >> 16) & 0xff;
+                            const g = (rgb >> 8) & 0xff;
+                            const b = rgb & 0xff;
+                            return 0.299 * r + 0.587 * g + 0.114 * b; // Luminosity formula
+                        }
+
+                        // Get the color palette container
+                        const colorPalette =
+                            document.getElementById("color-palette");
+
+                        // Render the sorted colors dynamically
+                        colors.forEach((color) => {
+                            const colorBox = document.createElement("div");
+                            colorBox.className = "color-box";
+                            colorBox.style.backgroundColor = color.hex;
+
+                            const colorText = document.createElement("p");
+                            colorText.style.color = color.text;
+                            colorText.textContent = color.hex;
+
+                            colorBox.appendChild(colorText);
+                            colorPalette.appendChild(colorBox);
+                        });
+                    </script>
                 </div>
             </section>
             <section>
