@@ -1,10 +1,4 @@
 /* -===-===-=== Index ===-===-===- */
-/* Main */
-
-main {
-    padding-top: 50px;
-}
-
 /* Colors Section */
 #colors {
     text-align: center;
@@ -44,4 +38,8 @@ main {
 #welcome {
     margin: 20px auto 50px;
     min-height: 220px;
+}
+
+#welcome {
+    margin-top: 50px;
 }
