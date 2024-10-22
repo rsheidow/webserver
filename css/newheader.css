@@ -51,7 +51,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    top: 100px;
+    top: 80px;
     right: -250px;
     min-height: 100%;
     width: 200px;
