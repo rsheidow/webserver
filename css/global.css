@@ -11,7 +11,8 @@ body {
     padding: 0;
     line-height: 1.6;
     flex-direction: column;
-    min-height: 100vh; /* Full height of the viewport */
+    min-height: 100vh;
+    display: flex;
 }
 
 /* Main Content Styling */
