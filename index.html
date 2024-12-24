@@ -10,7 +10,28 @@
         <link rel="stylesheet" href="css/footer.css" />
     </head>
     <body>
-        <!--#include virtual="/header.html"-->
+        <header class="header-container">
+            <h1>ryan sheidow</h1>
+            <script>
+                function toggleMenu(x) {
+                    x.classList.toggle("change");
+                    const menu = document.getElementById("topMenu");
+                    menu.classList.toggle("show");
+                }
+            </script>
+            <div class="container" onclick="toggleMenu(this)">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+            </div>
+            <nav id="topMenu" class="topMenu-content">
+                <a href="/">Home</a>
+                <a href="/careers.html">Careers</a>
+                <a href="/todo-projects.html">Projects</a>
+                <a href="/weather.html">Weather App</a>
+            </nav>
+        </header>
+        
         <main>
             <section id="welcome">
                 <h2>Welcome to my website</h2>
