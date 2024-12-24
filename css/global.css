@@ -33,7 +33,7 @@ main {
     width: 90%;
     max-width: 900px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    flex: 1; /* Allows main content to grow and take up available space */
+    /* flex: 1; /* Allows main content to grow and take up available space */ */
 }
 
 main p {
