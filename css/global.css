@@ -15,6 +15,12 @@ body {
     display: flex;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the wrapper takes full viewport height */
+}
+
 /* Main Content Styling */
 main {
     padding: 50px 20px;
